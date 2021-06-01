@@ -1,0 +1,1 @@
+Creating a replication of the Google Homepage. Practices Basic HTML and CSS and becomes familiar with using Developer Tools 
