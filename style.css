@@ -2,24 +2,59 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
+        background-color: transparent;
+        width: auto;
+        height: auto;
     }
     #google-logo {
-        position: absolute;
-        text-align: center;
-        top: 18em;
-        left: 30em;
+
     }
-    #navbar {
-        display: block;
-        position: relative;
-        top: O;
+    .gcontainer {
+        margin: 0.5em;
+        padding: 0.5em;
+        display: inline-grid;
+        border: solid black 5px; /*Take out when done*/
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: repeat(3, 1fr) 3fr repeat(4, 1fr);
+        grid-template-areas: 
+        "nav nav nav .  nav nav nav nav"
+        ".    .  logo logo logo logo   .   ."
+        "footer footer footer footer footer footer footer .";
+    }
+    .gitem1 {
+        grid-area: nav;
+        text-align: left;
+    }
+    .gitem2 {
+        grid-area: nav;
+        text-align: left;
+    }
+    .gitem3 {
+        grid-area: nav;
+        text-align: right;
+    }
+    .gitem4 {
+        grid-area: nav;
+        text-align: right;
+    }
+    .gitem5 {
+        grid-area: nav;
+        text-align: right;
+    }
+    .gitem6 {
+        grid-area: nav;
+        text-align: right;
+    }
+    .gitem-logo {
+        grid-area: logo;
+        text-align: center;
     }
     ul li{
         margin: 0;
         padding: 1em;
         display: inline;
         list-style-type: none;
-        background-color: #FFF;
+        background-color: transparent;
         text-decoration: none;
     }
     li a {
@@ -32,15 +67,9 @@
     li:hover {
         text-decoration: underline;
     }
-    .left {
-        float: left;
-    }
-    .right {
-        float: right;
-    }
     #sign-in {
         background-color: #1a73e8;
-
+        color: white;
         width: 60px;
         height: 30px;
         border-radius: 3px;
