@@ -6,38 +6,48 @@
         width: auto;
         height: auto;
     }
-    .flexcontainer {
-        margin: 0.5em;
+    .gcontainer {
+        margin: 0em;
         padding: 0.5em;
         width: 100vw;
         height: 100vh;
-        display: flex;
-        flex-flow: row nowrap;
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'nav1    nav2'
+        'logo   logo'
+        'footer1 footer2';
         border: solid black 5px; /*Temporary*/
     }
     .about .store {
-        align-self: flex-start;
-        justify-self: flex-start;
+        grid-area: nav1;
+        align-self: start;
+        justify-self: start;
         background-color: red; /* Temporary */
     }
     .gmail {
-        align-self: flex-start;
-        justify-self: flex-end;
+        grid-area: nav2;
+        align-self: start;
+        justify-self: end;
         background-color: orange; /* Temporary */
     }
     .images {
-        align-self: flex-start;
-        justify-self: flex-end;
+        grid-area: nav2;
+        align-self: start;
+        justify-self: end;
         background-color: yellow; /* Temporary */
     }
     .apps-icon {
-        align-self: flex-start;
-        justify-self: flex-end;
+        grid-area: nav2;
+        align-self: start;
+        justify-self: end;
         background-color: green; /* Temporary */
     }
     .sign-in {
-        align-self: flex-start;
-        justify-self: flex-end;
+        grid-area: nav2;
+        align-self: start;
+        justify-self: end;
         background-color: #1a73e8;
         color: white;
         width: 60px;
@@ -50,6 +60,7 @@
         background-color: #237cf1;
     }
     .google-logo {
+        grid-area: logo;
         margin: auto;
     }
     div {
