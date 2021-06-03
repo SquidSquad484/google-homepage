@@ -8,47 +8,52 @@
     }
     .gcontainer {
         margin: 0.5em;
-        padding: 0.5em;
+        padding: 0.9em 0.5em 0.5em 0.2em;
         display: grid;
         width: 100vw;
         height: 100vh;
         border: solid black 5px; /*Take out when done*/
         grid-template-rows: 1fr 3fr 1fr;
-        grid-template-columns: repeat(3, 1fr) 3fr repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-        'nav1   nav1   .       .    nav2    nav2    nav2    nav2'
-        'logo   logo    logo   logo   logo   logo   logo   logo'
-        'footer footer footer footer footer footer footer footer';
+        'nav1   nav2'
+        'logo   logo'
+        'footer1 footer2';
     }
-    .gitem1 .gitem2 {
+    .about .store {
         grid-area: nav1;
+        align-self: start;
         justify-self: start;
     }
-    .gitem3 {
+    .gmail {
         grid-area: nav2;
+        align-self: start;
         justify-self: end;
     }
-    .gitem4 {
+    .images {
         grid-area: nav2;
+        align-self: start;
         justify-self: end;
     }
-    .gitem5 {
+    .apps-icon {
         grid-area: nav2;
+        align-self: start;
         justify-self: end;
     }
-    .gitem6 {
+    .sign-in {
         grid-area: nav2;
+        align-self: start;
         justify-self: end;
     }
-    .gitem-logo {
+    .google-logo {
         grid-area: logo;
+        align-self: center;
         justify-self: center;
     }
     div {
         margin: 0;
         padding: 1em;
         display: inline;
-        list-style-type: none;
         background-color: transparent;
         text-decoration: none;
         color: rgb(36, 36, 36);
