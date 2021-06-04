@@ -74,13 +74,18 @@
     }
     .search-form {
         grid-area: search; 
-        border: solid rgba(171, 171, 171, 0.5) 1px;
+        border: solid rgba(171, 171, 171, 0.45) 1px;
         width: 570px;
         height: 2.9em;
         border-radius: 40px;
         align-self: start;
         justify-self: center;
         color: transparent;
+    }
+    .search-icon {
+        grid-area: search;
+        
+        color: rgb(114, 114, 114);
     }
     a {
         margin: 1em;
