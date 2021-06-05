@@ -4,24 +4,35 @@
     <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
     <title>Google</title>
-<body >
+<body>
     <article class="gcontainer">
         <header>
             <nav>
-                <a class="about" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-                <a class="store" href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
-                <a class="gmail" href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a>
-                <a class="images" href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
-                <span class="material-icons-outlined apps-icon">
-                apps </span>
-                <a class="sign-in" href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</a>
+                <div class="navone">
+                    <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                    <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+                </div>
+                <div class="navtwo">
+                    <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a>
+                    <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
+                    <span class="material-icons-outlined">
+                    apps </span>
+                    <a href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button class="sign-in" type="button">Sign in</button></a>
+                </div>
             </nav>
         </header>
-                <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-                <div class="search-form"></div>
-                <span class="material-icons-outlined search-icon">
-                    search
-                    </span>
+                <div class="logo">
+                    <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+                </div>
+                <div class="search search-form">
+                    <form>
+                        <label for="search-form"></label>
+                        <input type="text" id="search-form">
+                    </form>
+                    <span class="material-icons-outlined">
+                        search
+                        </span>
+                </div>
     </article>
 </body>
     </html>
