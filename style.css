@@ -61,7 +61,7 @@
     .sign-in:hover {
         background-color: #237cf1;
     }
-    .search-form { 
+    .search-box { 
         border: solid rgba(171, 171, 171, 0.45) 1px;
         width: 570px;
         height: 3.2em;
@@ -71,12 +71,23 @@
         color: transparent;
         z-index: 1;
     }
+    .search-box:hover {
+        box-shadow: 0 0 3px 1px #f1f1f1;
+    }
+    .search-form {
+        border: none;
+        color: transparent;
+        width: 570px;
+        height: 3.2em;
+        align-self: start;
+        justify-self: center;
+    }
     .search-icon {
         grid-area: search;
         align-self: start;
         justify-self: center;
-        padding-right: 535px;
-        padding-top: 10px;
+        margin-right: 535px;
+        margin-top: 10px;
         color: rgb(114, 114, 114);
         z-index: 2;
     }
