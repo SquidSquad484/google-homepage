@@ -52,25 +52,10 @@ body {
     background-color: #ffddff; /* Temporary */
 }
 .search-buttons {
+    display: inline-block;
     grid-area: search-buttons;
     align-self: start;
     justify-self: center;
-    width: 170px;
-    height: 15px;
-    border: 0 none transparent;
-    background-color: #f8f9fa;
-}
-.search-buttons:hover { /* Not actually a Grid Area Div but Related */
-    box-shadow: 0 0 3px 1px #f1f1f1;
-}
-.carbon {
-
-}
-.footerone {
-
-}
-.footertwo {
-
 }
 /* Grid Area Divs */
 .sign-in {
@@ -82,11 +67,12 @@ body {
     height: 35px;
     border: none;
     border-radius: 3px;
-    padding: auto;
     text-align: center;
+    text-decoration: none;
 }
 .sign-in:hover {
     background-color: #237cf1;
+    text-decoration: none;
 }
 .search-box { 
     border: solid rgba(171, 171, 171, 0.45) 1px;
@@ -128,4 +114,30 @@ a {
 }
 a:hover {
     text-decoration: underline;
+}
+#buttonone {
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    border: 0 none transparent;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: rgb(53, 53, 53);
+}
+#buttontwo {
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    border: 0 none transparent;
+    border-radius: 3px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: rgb(53, 53, 53);
+}
+#buttonone:hover {
+    box-shadow: 0 0 2px 1px #d3d3d3;
+}
+#buttontwo:hover {
+    box-shadow: 0 0 3px 1px #f1f1f1;
 }
