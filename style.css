@@ -1,103 +1,111 @@
 @charset "UTF-8";
-    body {
+body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         background-color: transparent;
         width: auto;
         height: auto;
+}
+.gcontainer {
+    margin: 0em;
+    padding: 5px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    position: absolute;
+    grid-template-rows: 1fr 2.8fr 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    ' navone    navtwo'
+    '  logo      logo'
+    ' search    search'
+    'buttonone buttontwo'
+    '  link      link'
+    ' carbon    carbon'
+    'footerone footertwo';
+    grid-gap: 30px;
+}
+/* Grid-Area Divs */
+.navone {
+    grid-area: navone;
+    align-self: start;
+    justify-self: start;
+    background-color: red; /* Temporary */
+}
+.navtwo {
+    grid-area: navtwo;
+    align-self: start;
+    justify-self: end;
+    font-size: 12px;
+    background-color: green; /* Temporary */
+}
+.logo {
+    grid-area: logo;
+    align-self: end;
+    justify-self: center;
+    padding-top: 50px;
     }
-    .gcontainer {
-        margin: 0em;
-        padding: 5px;
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        grid-template-rows: 1fr 2.8fr 1.5fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        ' navone    navtwo'
-        '  logo      logo'
-        ' search    search'
-        'buttonone buttontwo'
-        '  link      link'
-        ' carbon    carbon'
-        'footerone footertwo';
-        grid-gap: 30px;
-    }
-    /* Grid-Area Divs */
-    .navone {
-        grid-area: navone;
-        align-self: start;
-        justify-self: start;
-        background-color: red; /* Temporary */
-    }
-    .navtwo {
-        grid-area: navtwo;
-        align-self: start;
-        justify-self: end;
-        font-size: 12px;
-        background-color: green; /* Temporary */
-    }
-    .logo {
-        grid-area: logo;
-        align-self: end;
-        justify-self: center;
-    }
-    .search {
-        grid-area: search;
-    }
-    /* Grid Area Divs */
-
-    .sign-in {
-        background-color: #1a73e8;
-        color: white;
-        width: 60px;
-        height: 30px;
-        border: none;
-        border-radius: 3px;
-        padding: 1em 3em 1em 3em;
-        text-align: center;
-    }
-    .sign-in:hover {
-        background-color: #237cf1;
-    }
-    .search-box { 
-        border: solid rgba(171, 171, 171, 0.45) 1px;
-        width: 570px;
-        height: 3.2em;
-        border-radius: 40px;
-        align-self: start;
-        justify-self: center;
-        color: transparent;
-        z-index: 1;
-    }
-    .search-box:hover {
-        box-shadow: 0 0 3px 1px #f1f1f1;
-    }
-    .search-form {
-        border: none;
-        color: transparent;
-        width: 570px;
-        height: 3.2em;
-        align-self: start;
-        justify-self: center;
-    }
-    .search-icon {
-        grid-area: search;
-        align-self: start;
-        justify-self: center;
-        margin-right: 535px;
-        margin-top: 10px;
-        color: rgb(114, 114, 114);
-        z-index: 2;
-    }
-    a {
-        margin: 1em;
-        padding: 1em;
-        display: inline;
-        text-decoration: none;
-        color: rgb(36, 36, 36);
-    }
-    a:hover {
-        text-decoration: underline;
-    }
+.search {
+    grid-area: search;
+    align-self: end;
+    justify-self: center;
+    z-index: 3;
+    background-color: rgb(255, 221, 255); /* Temporary */
+}
+/* Grid Area Divs */
+.sign-in {
+    display: block;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 13px;
+    width: 90px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    padding: auto;
+    text-align: center;
+}
+.sign-in:hover {
+    background-color: #237cf1;
+}
+.search-box { 
+    border: solid rgba(171, 171, 171, 0.45) 1px;
+    width: 570px;
+    height: 3.2em;
+    border-radius: 40px;
+    align-self: start;
+    justify-self: center;
+    color: transparent;
+    z-index: 1;
+}
+.search-box:hover {
+    box-shadow: 0 0 3px 1px #f1f1f1;
+}
+.search-form {
+    border: none;
+    background-color: transparent;
+    width: 570px;
+    height: 3.2em;
+    align-self: start;
+    justify-self: center;
+    z-index: 2;
+}
+.search-icon {
+    grid-area: search;
+    align-self: start;
+    justify-self: center;
+    margin-right: 535px;
+    margin-top: 10px;
+    color: rgb(114, 114, 114);
+    z-index: 2;
+}
+a {
+    margin: 1em;
+    padding: 1em;
+    display: inline;
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+a:hover {
+    text-decoration: underline;
+}
