@@ -13,14 +13,13 @@ body {
     height: 100vh;
     display: grid;
     position: absolute;
-    grid-template-rows: 1fr 2.8fr 1.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2.8fr 1.5fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     ' navone    navtwo'
     '  logo      logo'
     ' search    search'
-    'buttonone buttontwo'
-    '  link      link'
+    'search-buttons search-buttons'
     ' carbon    carbon'
     'footerone footertwo';
     grid-gap: 30px;
@@ -47,10 +46,31 @@ body {
     }
 .search {
     grid-area: search;
-    align-self: end;
+    align-self: start;
     justify-self: center;
     z-index: 3;
-    background-color: rgb(255, 221, 255); /* Temporary */
+    background-color: #ffddff; /* Temporary */
+}
+.search-buttons {
+    grid-area: search-buttons;
+    align-self: start;
+    justify-self: center;
+    width: 170px;
+    height: 15px;
+    border: 0 none transparent;
+    background-color: #f8f9fa;
+}
+.search-buttons:hover { /* Not actually a Grid Area Div but Related */
+    box-shadow: 0 0 3px 1px #f1f1f1;
+}
+.carbon {
+
+}
+.footerone {
+
+}
+.footertwo {
+
 }
 /* Grid Area Divs */
 .sign-in {
@@ -79,7 +99,7 @@ body {
     z-index: 1;
 }
 .search-box:hover {
-    box-shadow: 0 0 3px 1px #f1f1f1;
+    box-shadow: 0 0 3px 1.5px #e4e4e4;
 }
 .search-form {
     border: none;
