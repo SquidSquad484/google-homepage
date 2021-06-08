@@ -16,12 +16,12 @@ body {
     grid-template-rows: 1fr 2.8fr 1.5fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    ' navone    navtwo'
-    '  logo      logo'
-    ' search    search'
+    '    navone        navtwo'
+    '     logo          logo'
+    '    search        search'
     'search-buttons search-buttons'
-    ' carbon    carbon'
-    'footerone footertwo';
+    '    carbon         carbon'
+    '  footerone       footertwo';
     grid-gap: 30px;
 }
 /* Grid-Area Divs */
@@ -48,7 +48,6 @@ body {
     grid-area: search;
     align-self: start;
     justify-self: center;
-    z-index: 3;
     background-color: #ffddff; /* Temporary */
 }
 .search-buttons {
@@ -58,6 +57,8 @@ body {
     justify-self: center;
 }
 /* Grid Area Divs */
+
+/* Sign-in */
 .sign-in {
     display: block;
     background-color: #1a73e8;
@@ -74,37 +75,36 @@ body {
     background-color: #237cf1;
     text-decoration: none;
 }
-.search-box { 
+/* Sign-in */
+
+/* Search */
+.search-form {
+    position: relative;
     border: solid rgba(171, 171, 171, 0.45) 1px;
+    background-color: transparent;
+    border-radius: 40px;
     width: 570px;
     height: 3.2em;
-    border-radius: 40px;
     align-self: start;
     justify-self: center;
-    color: transparent;
     z-index: 1;
 }
-.search-box:hover {
+.search-form:hover {
     box-shadow: 0 0 3px 1.5px #e4e4e4;
 }
-.search-form {
-    border: none;
-    background-color: transparent;
-    width: 570px;
-    height: 3.2em;
-    align-self: start;
-    justify-self: center;
-    z-index: 2;
-}
 .search-icon {
+    position: relative;
     grid-area: search;
     align-self: start;
     justify-self: center;
     margin-right: 535px;
     margin-top: 10px;
     color: rgb(114, 114, 114);
-    z-index: 2;
+    z-index: 3;
 }
+/* Search */
+
+/* a Selector */
 a {
     margin: 1em;
     padding: 1em;
@@ -115,21 +115,24 @@ a {
 a:hover {
     text-decoration: underline;
 }
-#buttonone {
+/* a Selector */
+
+/* Search-Buttons */
+.buttonone {
     text-align: center;
     width: 130px;
-    height: 40px;
-    border: 0 none transparent;
+    height: 35px;
+    border: none;
     border-radius: 3px;
     background-color: #f8f9fa;
     font-size: 14px;
     color: rgb(53, 53, 53);
 }
-#buttontwo {
+.buttontwo {
     text-align: center;
     width: 130px;
-    height: 40px;
-    border: 0 none transparent;
+    height: 35px;
+    border: none;
     border-radius: 3px;
     background-color: #f8f9fa;
     font-size: 14px;
@@ -139,5 +142,6 @@ a:hover {
     box-shadow: 0 0 2px 1px #d3d3d3;
 }
 #buttontwo:hover {
-    box-shadow: 0 0 3px 1px #f1f1f1;
+    box-shadow: 0 0 2px 1px #d3d3d3;
 }
+/* Search-Buttons */
