@@ -13,7 +13,7 @@ body {
     height: 100vh;
     display: grid;
     position: absolute;
-    grid-template-rows: 1fr 2fr 0.7fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 0.7fr 2fr 0.5fr 0.5fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     '    navone        navtwo'
@@ -41,7 +41,7 @@ body {
     align-self: end;
     justify-self: center;
     padding-top: 50px;
-    }
+}
 .search {
     grid-area: search;
     align-self: start;
@@ -52,6 +52,24 @@ body {
     grid-area: search-buttons;
     align-self: start;
     justify-self: center;
+}
+.carbon {
+    grid-area: carbon;
+    align-self: end;
+    justify-self: center;
+    color: rgb(68, 68, 68);
+}
+.footerone {
+    grid-area: footerone;
+    align-self: end;
+    justify-self: start;
+    padding: 5px 5px 5px 90px;
+}
+.footertwo {
+    grid-area: footertwo;
+    align-self: end;
+    justify-self: end;
+    padding: 5px 90px 5px 5px;
 }
 /* Grid Area Divs */
 
@@ -78,8 +96,8 @@ body {
 .search-form {
     position: relative;
     border: solid rgba(171, 171, 171, 0.45) 1px;
-    background-color: transparent;
     border-radius: 40px;
+    background-color: transparent;
     width: 570px;
     height: 3.2em;
     align-self: start;
@@ -104,7 +122,7 @@ body {
 /* a Selector */
 a {
     margin: 1em;
-    padding: 1em;
+    padding: 5px;
     display: inline;
     text-decoration: none;
     color: rgb(36, 36, 36);
@@ -122,7 +140,7 @@ a:hover {
     border: none;
     border-radius: 3px;
     background-color: #f8f9fa;
-    font-size: 14px;
+    font-size: 13.5px;
     color: rgb(53, 53, 53);
 }
 .buttontwo {
@@ -132,7 +150,7 @@ a:hover {
     border: none;
     border-radius: 3px;
     background-color: #f8f9fa;
-    font-size: 14px;
+    font-size: 13.5px;
     color: rgb(53, 53, 53);
 }
 #buttonone:hover {
@@ -142,3 +160,7 @@ a:hover {
     box-shadow: 0 0 2px 1px #d3d3d3;
 }
 /* Search-Buttons */
+.leaf {
+    width: 12px;
+    height: 17px;
+}
