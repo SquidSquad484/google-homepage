@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./style.css" type="text/css">
-</head>
-    <title>Google</title>
-<body>
-          <header>
-              <nav class="gcontainer">    
-                <section class="navone">
-                    <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-                    <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+    <meta charset="utf-8">
+<body id="container">
+    <head>
+        <link href="./style.css" rel="stylesheet" type="text/css">
+        <title>Google</title>
+    </head>
+        <header>
+            <nav>
+                <section id="navone">
+                    <a href="#">About</a>
+                    <a href="#">Store</a>
                 </section>
-                <section class="navtwo">
-                    <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Gmail</a>
-                    <a href="https://www.google.com/imghp?hl=en&ogbl">Images</a>
-                    <span class="material-icons-outlined">
-                    apps </span>
-                    <a href="https://accounts.google.com/ServiceLogin/signinchooser?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button class="sign-in" type="button">Sign in</button></a>
+                <section id="navtwo">
+                    <a href="#">Gmail</a>
+                    <a href="#">Images</a>
+                    <img id="app-icon" src="file:///tmp/mozilla_olivia0/apps_black_24dp-2.svg" alt="apps icon">
+                    <a href="#"><button type="button" id="sign-in">Sign in</button></a>
                 </section>
-              </nav>
-          </header>
-      <article class="gcontainer">
-                <section class="logo">
-                    <img class="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-                </section>
-                <section class="search">
-                        <form>
-                            <label for="search-form"></label>
-                            <input class="search-form" type="text" id="search-form">
-                        </form>
-                </section>
-                    <div class="search-icon">
-                        <span class="material-icons-outlined">search</span>
-                    </div>
-                <section class="search-buttons">
-                        <button class="buttonone" type="button">Google Search</button>
-                        <button class="buttontwo" type="button">I'm Feeling Lucky</button>
-                </section>
-            <footer class="gcontainer">
-                <section class="carbon">
-                    <img class="leaf" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
-                    <a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a>
-                </section>
-                <section class="footerone">
-                    <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000078-0000000001&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">Advertising</a>
-                    <a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Business</a>
-                    <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
-                </section>
-                <section class="footertwo">
-                    <a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a>
-                    <a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a>
-                    <a href="#">Settings</a>
-                </section>
-            </footer>
+            </nav>
+        </header>
+    <article>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <form class="search-form">
+            <label for="search-form"></label>
+            <input class="search-form" type="form" id="search-form">
+        </form>
+            <div class="search-box"></div>
+            <img id="search-icon" src="file:///tmp/mozilla_olivia0/search_black_24dp.svg" alt="search icon">
+        <section id="buttons">
+            <button type="button" class="button-style">Google Search</button>
+            <button type="button" class="button-style">I'm Feeling Lucky</button>
+        </section>
+        <section id="external-link">
+            <h1>Find a COVID-19 vaccine appointment at <a id="vlink" href="#">vaccines.gov</a></h1>
+        </section>
     </article>
+        <footer> 
+            <section id="footerone">
+                <a class="footer" href="#">Advertising</a>
+                <a class="footer" href="#">Business</a>
+                <a class="footer" href="#">How Search Works</a>
+            </section>
+            <section id="footertwo">
+                <img id="leaf" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC">
+                <a class="footer" href="#">Carbon neutral since 2007</a>
+            </section>
+            <section id="footerthree">
+                <a class="footer" href="#">Privacy</a>
+                <a class="footer" href="#">Terms</a>
+                <a class="footer" href="#">Settings</a>
+            </section>
+        </footer>
 </body>
-    </html>
+</html>
