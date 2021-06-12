@@ -38,9 +38,9 @@ article {
     display: grid;
     align-content: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 10em;
-    line-height: 30px;
+    line-height: 50px;
 }
 footer {
     grid-area: footer;
@@ -81,8 +81,10 @@ footer {
 }
 /*Grid*/
 
-#app-icon {
-    top: 0px;
+#apps-icon {
+    position: relative;
+    top: 7px;
+    font-size: 22px;
 }
 #sign-in {
     margin-left: 10px;
@@ -123,9 +125,10 @@ img {
 }
 #search-icon {
     position: relative;
-    color: rgb(114, 114, 114);
-    right: 260px;
-    top: -39px;
+    color: rgb(150, 149, 149);
+    font-size: 20px;
+    top: -34px;
+    left: 12px;
     z-index: 2;
 }
 #buttons {
